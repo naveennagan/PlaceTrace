@@ -1,0 +1,15 @@
+{
+  "name": "PlaceTrace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Naveen Kumar N",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^3.5.3",
+    "unirest": "^0.2.9"
+  }
+}

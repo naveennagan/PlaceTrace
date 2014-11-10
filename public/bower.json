@@ -1,0 +1,16 @@
+{
+  "name": "bower.json",
+  "version": "1.0.0",
+  "authors": [
+    "Naveen Kumar N"
+  ],
+  "main": "bower.json",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
