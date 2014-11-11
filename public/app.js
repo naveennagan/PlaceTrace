@@ -9,12 +9,13 @@ app.controller('DashboardController',['$scope','$http',function($scope,$http){
    $scope.updateStatus="Click To Update";
    $scope.updateClicked=false;
    $scope.friendsCount=0;
-   
+   $scope.friends=[];
    $scope.updateData=function(){
       $scope.updateClicked=true;
 	  $scope.updateStatus="Updating";
 	  $http.get('/crawlFriendsData').success(function(response,code){
 	      $scope.friendsCount=response.count;
+		  $scope.friends=response.result;
 		  $scope.updateClicked=false;
 	      $scope.updateStatus="Click To Update";
 	 }); 

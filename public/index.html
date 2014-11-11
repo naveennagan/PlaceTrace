@@ -8,7 +8,12 @@
   <div class="container" ng-controller='DashboardController'>
 	 	 <button class="btn btn-success" ng-class="{'disabled': updateClicked}" ng-click="updateData()">{{updateStatus}}</button>
 		 <div><a href="#">Friends <span class="badge">{{friendsCount}}</span></a></div>
-		 
+		 <table>
+			 <tr ng-repeat="friend in friends | orderBy: 'locations':true">
+				<td>{{friend.name}}</td>
+				<td>{{friend.locations}}</td>
+			  </tr>				
+		</table>
   </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
